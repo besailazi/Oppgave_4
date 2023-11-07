@@ -1,0 +1,455 @@
+
+.container{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 3rem;
+	margin-top: 5rem;
+	margin-left: 2rem;
+}
+
+h1 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 3rem;
+	text-align: center;
+}
+
+ /* Style the accordion*/
+.accordion{
+	margin:0 10rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2rem;
+   background-color: #01447e;
+	color: #eee;
+	cursor: pointer;
+	padding: 18px;
+	width: 80%;
+	text-align: left;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	transition: 0.4s;
+}
+
+p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2rem;
+}
+
+.icon {
+	margin-left: 40rem;
+	position: absolute;
+}
+
+.active, .accordion:hover {
+	background-color: #0b7dda;
+ }
+
+ .item {
+	margin:0 10rem;
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+ }
+
+
+
+ /* The switch - the box around the slider */
+.switch {
+	margin: 20rem;
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+ }
+ 
+ /* Hide default HTML checkbox */
+ .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+ }
+ 
+ /* The slider */
+ .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: .4s;
+ }
+ 
+ .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+   transition: .4s;
+ }
+ 
+ input:checked + .slider {
+	background-color: #2196F3;
+ }
+ 
+ input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+ }
+ 
+ input:checked + .slider:before {
+	transform: translateX(26px);
+ }
+ 
+ .slider.round {
+	border-radius: 34px;
+ }
+ 
+ .slider.round:before {
+	border-radius: 50%;
+ }
+
+ /* Customize the label (the box) */
+.box {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: block;
+	position: relative;
+	padding-left: 3rem;
+	margin: 5rem;
+	cursor: pointer;
+	font-size: 22px;
+	user-select: none;
+ }
+ 
+ /* Hide the browser's default checkbox */
+ .box input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+ }
+ 
+ /* Create a custom checkbox */
+ .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+ }
+ 
+ 
+ /* When the checkbox is checked, add a blue background */
+ .box input:checked ~ .checkmark {
+	background-color: #2196F3;
+ }
+ 
+ /* Create the checkmark/indicator (hidden when not checked) */
+ .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+ }
+ 
+ /* Show the checkmark when checked */
+ .box input:checked ~ .checkmark:after {
+	display: block;
+ }
+ 
+ /* Style the checkmark/indicator */
+ .box .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+ }
+
+ /* Customize the label (the circle) */
+ .circle {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: block;
+	position: relative;
+	padding-left: 3rem;
+	margin: 5rem;
+	cursor: pointer;
+	font-size: 22px;
+	user-select: none;
+ }
+ 
+ /* Hide the browser's default radio button */
+ .circle input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 0;
+   width: 0;
+}
+
+/* Create a custom radio button */
+.mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.circle:hover input ~ .mark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.circle input:checked ~ .mark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.circle input:checked ~ .mark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.circle .mark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Style the search field */
+form.search input[type=text] {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding: 10px;
+	font-size: 2rem;
+	border: 1px solid grey;
+	border-radius: 10px;
+	float: left;
+	width: 80%;
+	background: #f1f1f1;
+ }
+ 
+ /* Style the submit button */
+ form.search button {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2rem;
+	float: left;
+	width: 80%;
+	padding: 10px;
+	background: #01447e;
+	color: white;
+	border: 1px solid grey;
+	border-radius: 10px;
+	cursor: pointer;
+ }
+ 
+ form.search button:hover {
+	background: #0b7dda;
+ }
+ 
+ /* Clear floats */
+ form.search::after {
+	content: "";
+	clear: both;
+	display: table;
+ }
+
+ /* Style the list */
+ul.breadcrumb {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2rem;
+	padding: 10px 16px;
+	list-style: none;
+	background-color: #eee;
+ }
+ 
+ /* Display list items side by side */
+ ul.breadcrumb li {
+	display: inline;
+	font-size: 18px;
+ }
+ 
+ /* Add a slash symbol (/) before/behind each list item */
+ ul.breadcrumb li+li:before {
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
+ }
+ 
+ /* Add a color to all links inside the list */
+ ul.breadcrumb li a {
+	color: #0275d8;
+	text-decoration: none;
+ }
+ 
+ /* Add a color on mouse-over */
+ ul.breadcrumb li a:hover {
+	color: #01447e;
+	text-decoration: underline;
+ }
+
+ /* Style the button*/ 
+ .block {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	display: block;
+	width: 50%;
+	border: none;
+	border-radius: 10px;
+	background-color: #01447e;
+	color:#eee;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+ }
+  
+ .block:hover {
+  background-color: #0b7dda;
+}
+
+/* Style the tab */
+.tab {
+	margin:0 10rem;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	background-color: #01447e;
+ }
+ 
+ /* Style the buttons that are used to open the tab content */
+ .tab button {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2rem;
+	background-color: inherit;
+	float: left;
+	border: none;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+ }
+ 
+ /* Change background color of buttons on hover */
+ .tab button:hover {
+	background-color: #0b7dda;
+ }
+ 
+ /* Create an active/current tablink class */
+ .tab button.active {
+	background-color: #ccc;
+ }
+ 
+ /* Style the tab content */
+ .tabcontent {
+	margin:0 10rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2rem;
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	border-top: none;
+}
+
+/* Popup container */
+.popup {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-left: 10rem;
+	margin-top: 10rem;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+ }
+ 
+ /* The actual popup (appears on top) */
+ .popup .popuptext {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	visibility: hidden;
+	width: 160px;
+	background-color: #01447e;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+ }
+ 
+ /* Popup arrow */
+ .popup .popuptext::after {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+ }
+ 
+ /* Toggle this class when clicking on the popup container (hide and show the popup) */
+ .popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+ }
+ 
+ /* Add animation (fade in the popup) */
+ @-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+ }
+ 
+ @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+ }
+/* Add styles to loader */
+ .loader {
+	margin-left: 20rem;
+	margin-top: 10rem;
+	border: 16px solid #f3f3f3; 
+	border-top: 16px solid #3498db; 
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+ }
+ 
+ @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+ }
+ 
+ /* Add mediaquery */
+
+@media (max-width: 786px){
+	body{
+		width: 400px;
+	}
+	
+
+}
