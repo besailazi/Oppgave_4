@@ -36,34 +36,20 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-/*const accordions = document.querySelectorAll('.accordion');
-
-accordions.forEach(accordion => {
-	const accordionToggle = accordion.querySelector('.accordion__toggle');
-	
-	const displayAccordionContent = (event) => {
-		accordion.classList.toggle('accordion--expanded');
-	}
-	
-	accordionToggle.addEventListener('click', displayAccordionContent);
-})
-
-const componentTriggersButtons = document.querySelectorAll('.component-triggers__button');
-*/
 
 // Add javascript for the tabs
 
 function openCity(evt, cityName) {
-	var i, tabcontent, tablinks;
+	let i, tabcontent, tablinks;
  
 	// Get all elements with class="tabcontent" and hide them
-	tabcontent = document.getElementsByClassName("tabcontent");
+	tabcontent = document.querySelectorAll(".tabcontent");
 	for (i = 0; i < tabcontent.length; i++) {
 	  tabcontent[i].style.display = "none";
 	}
  
 	// Get all elements with class="tablinks" and remove the class "active"
-	tablinks = document.getElementsByClassName("tablinks");
+	tablinks = document.querySelectorAll(".tablinks");
 	for (i = 0; i < tablinks.length; i++) {
 	  tablinks[i].className = tablinks[i].className.replace(" active", "");
 	}
@@ -74,7 +60,7 @@ function openCity(evt, cityName) {
  }
 
  function myFunction() {
-	var popup = document.getElementById("myPopup");
+	var popup = document.querySelector("#myPopup");
 	popup.classList.toggle("show");
  }
 
