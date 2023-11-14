@@ -1,5 +1,5 @@
 # Component Library
-This is a collection of reusable components that can be used in various web projects. Each component has its own HTML file for easy visualization and implementation.
+This is a collection of reusable components that can be used in various web projects.
 
 ## Components
 1. **Acoordion Component**
@@ -23,6 +23,6 @@ This is a collection of reusable components that can be used in various web proj
 10. **Loader Component**
 
 ## Usage
-To use any of these components, simply copy the respective HTML code from the provided files and integrate it into your project. Make sure to include any necessary CSS and JavaScript files if required by the component.
+To use any of these components, simply click the name of the component you want to see. All code from the provided files are integrated in te html, css and javascript files.
 
 
