@@ -9,47 +9,161 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
 	<!-- Add the items -->
 	<div class="container">
 		
-		<div class="accordion-item">
-			<a href="accordion.html">Accordion</a>
-		</div>
+		<section id="accordion" class="accordion-item">
+			<a href="#" onclick="toggleComponent('accordion')">Accordion</a>
+            <div id="accordion-content" class="hidden">
+					<button class="accordion">This is an Accordion<span class="icon">▽</span></button>
+					<div class="item">This is what you see</div>
+            </div>
+		</section>
 
-		<div class="breadcrumb-item">
-			<a href="breadcrumb.html">Breadcrumbs</a>
-		</div>
-      <div class="button-item">
-			<a href="button.html">Button</a>
-		</div>
+		<section id="breadcrumb" class="breadcrumb-item">
+			<a href="#" onclick="toggleComponent('breadcrumb')">Breadcrumb</a>
+            <div id="breadcrumb-content" class="hidden">
+					<h1>Here you have an Breadcrumb!</h1>
+	               <ul class="breadcrumb">
+		             <li><a href="#">Home</a></li>
+		             <li><a href="#">Holiday</a></li>
+		             <li><a href="#">Summer</a></li>
+		             <li>Turkey</li>
+	              </ul>
+				</div>
+		</section>
 
-		<div class="switch-item">
-			<a href="switch.html">Switch</a>
-		</div>
+      <section id="button" class="button-item">
+			<a href="#" onclick="toggleComponent('button')">Button</a>
+            <div id="button-content" class="hidden">
+					<h1>This is an Button!</h1>
+	               <button type="button" class="block">Button</button>
+				</div>
+		</section>
+
+		<section id="switch" class="switch-item">
+			<a href="#" onclick="toggleComponent('switch')">Switch</a>
+            <div id="switch-content" class="hidden">
+					<h1>This is an Switch!</h1>
+	               <label class="switch">
+		             <input type="checkbox">
+		             <span class="slider round"></span>
+	               </label>
+				</div>
+		</section>
 		
-		<div class="checkbox-item">
-			<a href="checkbox.html">Checkbox</a>
-		</div>
+		<section id="checkbox" class="checkbox-item">
+			<a href="#" onclick="toggleComponent('checkbox')">Checkbox</a>
+            <div id="checkbox-content" class="hidden">
+					<h1>Here are some Checkboxes!</h1>
+	                <label class="box">One
+		                <input type="checkbox" checked="checked">
+		                <span class="checkmark"></span>
+	                </label>
+	 
+	                <label class="box">Two
+		                <input type="checkbox">
+		                <span class="checkmark"></span>
+	                </label>
+	 
+	                <label class="box">Three
+		                <input type="checkbox">
+		                <span class="checkmark"></span>
+	                </label>
+	 
+	                 <label class="box">Four
+		                <input type="checkbox">
+		                <span class="checkmark"></span>
+                   </label>
+				</div>
+		</section>
 
-		<div class="radio-item">
-			<a href="radio.html">Radio</a>
-		</div>
+		<section id="radio" class="radio-item">
+			<a href="#" onclick="toggleComponent('radio')">Radio</a>
+            <div id="radio-content" class="hidden">
+					<h1>Here are some Radiobuttons!</h1>
+	                <label class="circle">One
+		                <input type="checkbox" checked="checked">
+		                <span class="mark"></span>
+	                </label>
+	 
+	                <label class="circle">Two
+		                <input type="checkbox">
+		                <span class="mark"></span>
+	                </label>
+	 
+	                <label class="circle">Three
+		                <input type="checkbox">
+		                <span class="mark"></span>
+	                </label>
+	 
+	                <label class="circle">Four
+		                <input type="checkbox">
+		                <span class="mark"></span>
+                   </label>
+	
+				</div>
+		</section>
 
-		<div class="pop-up-item">
-			<a href="popup.html">Popup</a>
-		</div>
+		<section id="popup" class="pop-up-item">
+			<a href="#" onclick="toggleComponent('popup')">Popup</a>
+            <div id="popup-content" class="hidden">
+					<h1>This is an Popup</h1>
+	               <div class="popup" onclick="myFunction()">Click me!
+		            <span class="popuptext" id="myPopup">Popup text...</span>
+	               </div>
+				</div>
+		</section>
 
-		<div class="tabs-item">
-			<a href="tabs.html">Tabs</a>
-		</div>
+		<section id="tabs" class="tabs-item">
+			<a href="#" onclick="toggleComponent('tabs')">Tabs</a>
+            <div id="tabs-content" class="hidden">
+					<h1>Here you have an Tab!</h1>
+	
+                <div class="tab">
+	                <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+	                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+	                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                </div>
+ 
+ 
+                <div id="London" class="tabcontent">
+	                <h3>London</h3>
+	                <p>London is the capital city of England.</p>
+                </div>
+ 
+                <div id="Paris" class="tabcontent">
+	                <h3>Paris</h3>
+	                <p>Paris is the capital of France.</p>
+                </div>
+ 
+                <div id="Tokyo" class="tabcontent">
+	                <h3>Tokyo</h3>
+	                <p>Tokyo is the capital of Japan.</p>
+                </div>
+				</div>
+		</section>
 
-		<div class="search-item">
-			<a href="search.html">Search</a>
-		</div>
+		<section id="search" class="search-item">
+			<a href="#" onclick="toggleComponent('search')">Search</a>
+            <div id="search-content" class="hidden">
+					<h1>You can Search her!</h1>
+	             <form class="search">
+		          <input type="text" placeholder="Search.." name="search">
+		          <button type="submit">Search</button>
+	             </form>
+	
+				</div>
+		</section>
 
-		<div class="loader-item">
-			<a href="loader.html">Loader</a>
-		</div>
+		<section id="loader" class="loader-item">
+			<a href="#" onclick="toggleComponent('loader')">Loader</a>
+            <div id="loader-content" class="hidden">
+					<h1>This is an Loader!</h1>
+	            <div class="loader"></div>
+				</div>
+		</section>
    </div>
 
 	<script src="app.js" defer></script>

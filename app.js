@@ -1,5 +1,25 @@
+function showComponent(componentId) {
+	// Hide all components
+	const allComponents = document.querySelectorAll('.container section div');
+	allComponents.forEach(component => {
+		 component.classList.add('hidden');
+	});
+
+	
+	// Show the selected component
+	const selectedComponent = document.getElementById(`${componentId}-content`);
+	selectedComponent.classList.remove('hidden');
+}
+
+function toggleComponent(componentId) {
+	// Toggle the visibility of the selected component
+	const selectedComponent = document.getElementById(`${componentId}-content`);
+	selectedComponent.classList.toggle('hidden');
+}
+
+
 // Add javascript for the accordion 
-const acc = document.getElementsByClassName("accordion");
+const acc = document.querySelectorAll(".accordion");
 let i;
 
 for (i = 0; i < acc.length; i++) {
@@ -15,6 +35,21 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+/*const accordions = document.querySelectorAll('.accordion');
+
+accordions.forEach(accordion => {
+	const accordionToggle = accordion.querySelector('.accordion__toggle');
+	
+	const displayAccordionContent = (event) => {
+		accordion.classList.toggle('accordion--expanded');
+	}
+	
+	accordionToggle.addEventListener('click', displayAccordionContent);
+})
+
+const componentTriggersButtons = document.querySelectorAll('.component-triggers__button');
+*/
 
 // Add javascript for the tabs
 

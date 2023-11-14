@@ -1,9 +1,14 @@
-
+body {
+	background-color: #c6e0f6;
+}
 .container{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 3rem;
 	margin-top: 5rem;
-	margin-left: 2rem;
+	margin-left: 2rem;	
+}
+.hidden {
+	display: none;
 }
 
 h1 {
@@ -44,12 +49,60 @@ p {
  }
 
  .item {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 2rem;
 	margin:0 10rem;
 	padding: 0 18px;
 	background-color: white;
 	display: none;
 	overflow: hidden;
  }
+
+ /*.accordion {
+	border-radius: 10px;
+	background: #01447e;
+	overflow: hidden;
+	min-width: 20em;
+}
+
+.accordion__toggle {
+	width: 100%;
+	text-align: left;
+	padding: 0.5rem;
+}
+
+.accordion__toggle::before {
+	content: '';
+	display: inline-block;
+	width: 1.2rem;
+	height: 0.8rem;
+	background: url('../../assets/images/arrow.svg') no-repeat bottom;
+	background-size: contain;
+	margin-right: 0.4rem;
+}
+
+.accordion__content {
+	display: none;
+	padding: 0.5rem;
+}
+
+.accordion--hover .accordion__toggle,
+.accordion__toggle:hover,
+.accordion__toggle--hover {
+	background: #0b7dda;
+}
+
+.accordion--expanded .accordion__content {
+	display: block;
+}
+
+.accordion--expanded .accordion__toggle {
+	border-bottom: 2px solid #01447e;
+}
+
+.accordion--expanded .accordion__toggle::before {
+	transform: rotate(180deg)
+}*/
 
 
 
