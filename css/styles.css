@@ -415,7 +415,7 @@ ul.breadcrumb {
  
  /* Add mediaquery */
 
-@media (max-width: 786px){
+@media (max-width: 780px){
 	body{
 		width: 400px;
 	}
